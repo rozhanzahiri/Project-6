@@ -1,0 +1,22 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    font-family: "Nunito Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+*,*::after,*::before{
+    margin: 0;padding: 0;box-sizing: border-box;
+}

@@ -1,0 +1,1340 @@
+main {
+    >.row {
+        >.head-top {
+            width: 100%;
+            height: 103vh;
+
+            >* {
+                width: 100%;
+            }
+
+            >.slider {
+                height: 93%;
+                position: relative;
+
+                >figure {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        animation: 15s linear infinite;
+
+                        &:nth-of-type(1) {
+                            animation-name: img1;
+
+                        }
+
+                        &:nth-of-type(2) {
+                            animation-name: img2;
+
+                        }
+
+                        &:nth-of-type(3) {
+                            animation-name: img3;
+
+                        }
+                    }
+                }
+
+                /* start nav// */
+                >nav {
+                    display: flex;
+                    width: 100%;
+                    height: 70px;
+                    position: absolute;
+                    top: 0;
+                    z-index: 9999;
+                    display: flex;
+
+                    >* {
+                        height: 100%;
+                    }
+
+                    >div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        >h2 {
+                            font-style: 30px;
+                            padding-left: 40px;
+
+                            >a {
+                                color: white;
+                            }
+                        }
+                    }
+
+                    >ul {
+                        display: flex;
+                        margin-left: 30px;
+
+                        >li {
+                            height: 100%;
+                            color: white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 15px;
+
+                            &:first-of-type {
+                                >a {
+                                    &::after {
+                                        width: 112%;
+                                    }
+                                }
+                            }
+
+                            >a {
+                                color: white;
+                                font-size: 20px;
+                                position: relative;
+
+                                &:hover {
+                                    &::after {
+                                        width: 112%;
+                                    }
+                                }
+
+                                &::after {
+                                    content: '';
+                                    width: 0px;
+                                    height: 1.5px;
+                                    position: absolute;
+                                    background-color: white;
+                                    display: flex;
+                                    bottom: -5px;
+                                    left: -7%;
+                                    transition: .4s;
+                                }
+                            }
+                        }
+                    }
+
+                    >section {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        right: 50px;
+
+                        >.btn {
+                            border: 2px solid white;
+                            width: 170px;
+                            margin-right: 20px;
+
+                            >a {
+                                width: 100%;
+                                height: 100%;
+                                color: white;
+                                transition: .4s;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 20px;
+
+                                &:hover {
+                                    color: black;
+                                    background-color: white;
+                                }
+                            }
+                        }
+
+                        >a {
+                            >i {
+                                color: white;
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+
+                >div {
+                    width: 80%;
+                    height: 80%;
+                    position: absolute;
+                    left: 10%;
+                    bottom: 0;
+                    z-index: 999;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    >* {
+                        display: block;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    >h1 {
+                        font-size: 80px;
+                        margin-top: 120px;
+                    }
+
+                    >p {
+                        width: 100%;
+                        font-size: 24px;
+                        margin-top: -130px;
+                    }
+
+                    >.btn {
+                        margin-top: -130px;
+                        width: 250px;
+
+                        >a {
+                            width: 100%;
+                            height: 100%;
+                            font-size: 20px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: white;
+                            color: black;
+                            transition: .4s;
+
+                            &:hover {
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    display: flex;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.53);
+                }
+            }
+
+            >.bottom {
+                height: 7%;
+                background-color: #e6e2f5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >p {
+                    >a {
+                        color: black;
+                        text-decoration: underline;
+
+                        &:hover {
+                            color: rgba(0, 0, 255, 0.519);
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end head-top// */
+        >.sec1 {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >section {
+                width: 80%;
+                height: 65%;
+                display: flex;
+                justify-content: space-between;
+
+                >figure {
+                    width: 31%;
+                    height: 100%;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+
+                    >div {
+                        width: 90%;
+                        height: 60%;
+                        position: absolute;
+                        bottom: -10%;
+                        background-color: white;
+                        transition: .4s;
+
+                        >* {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                        }
+
+                        >h5 {
+                            margin-top: 50px;
+
+                            >a {
+                                color: black;
+                                font-size: 20px;
+                                transition: .4s;
+
+                                &:hover {
+                                    color: rgba(0, 0, 255, 0.716);
+                                }
+                            }
+                        }
+
+                        >p {
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            font-size: 15px;
+                        }
+
+                        >hr {
+                            width: 70%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            border-width: .1px;
+                            border-color: rgba(128, 128, 128, 0.145);
+                        }
+
+                        >a {
+                            margin: 25px 0;
+                            color: black;
+                            font-size: 15px;
+                        }
+
+                        >.btn {
+                            width: 100%;
+                            height: 60px;
+                            position: absolute;
+                            bottom: 0;
+
+                            >a {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                background-color: black;
+                                color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    transition: .4s;
+
+                    &:hover {
+                        scale: 1.03;
+
+                        >div {
+                            bottom: -7%;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end sec1// */
+        >.sec2 {
+            width: 100%;
+            height: 88vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >div {
+                width: 80%;
+                height: 80%;
+                background-color: #e6e2f5;
+                display: flex;
+
+                >section {
+                    width: 60%;
+                    height: 100%;
+
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    >* {
+                        width: 80%;
+                    }
+
+                    >h2 {
+                        font-size: 45px;
+                        text-align: left;
+                        padding-top: 100px;
+                    }
+
+                    >p {
+                        margin-top: -30px;
+                        margin-bottom: 30px;
+                        font-size: 18px;
+                        text-align-last: left;
+                    }
+
+                    >div {
+                        margin-top: -40px;
+
+                        >.btn {
+                            border: 1px solid black;
+                            width: 220px;
+
+                            >a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: black;
+                                background-color: white;
+                                transition: .4s;
+
+                                &:hover {
+                                    color: white;
+                                    background-color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                >figure {
+                    width: 40%;
+                    height: 100%;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    position: relative;
+
+                    >.btn {
+                        width: 160px;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+
+                        >a {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: black;
+                            background-color: white;
+                            transition: .4s;
+
+                            &:hover {
+                                color: white;
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end sec2// */
+        >.sec3 {
+            width: 100%;
+            height: 560px;
+            display: flex;
+
+            >* {
+                height: 70%;
+            }
+
+            >section {
+                width: 30%;
+
+                >* {
+                    margin-left: 150px;
+                    width: 50%;
+                }
+
+                >h2 {
+                    font-size: 40px;
+                }
+
+                >p {
+                    margin-top: 20px;
+                }
+
+                >.btn {
+                    margin-top: 30px;
+
+                    >a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+                        border: 1px solid black;
+                        color: black;
+                        transition: .4s;
+
+                        &:hover {
+                            color: white;
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+
+            >div {
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+
+                >figure {
+                    width: 30%;
+                    height: 100%;
+                    position: relative;
+
+                    transition: .4s;
+
+                    &:hover {
+                        scale: 1.03;
+
+                        >div {
+                            bottom: 12%;
+                        }
+                    }
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    display: flex;
+                    justify-content: center;
+
+                    >div {
+                        width: 85%;
+                        height: 40%;
+                        position: absolute;
+                        bottom: 10%;
+                        background-color: white;
+                        transition: .4s;
+
+                        >* {
+                            display: flex;
+                            justify-content: center;
+
+                        }
+
+                        >h4 {
+                            margin-top: 30px;
+
+                            >a {
+                                color: black;
+                                transition: .4s;
+
+                                &:hover {
+                                    color: rgba(0, 0, 255, 0.468);
+                                }
+                            }
+
+                        }
+
+                        >p {
+                            margin-top: 10px;
+
+                            >a {
+                                color: black;
+                                transition: .4s;
+
+                                &:hover {
+                                    color: rgba(0, 0, 255, 0.468);
+                                }
+                            }
+                        }
+
+                        >section {
+
+                            display: flex;
+                            justify-content: space-around;
+                            width: 50%;
+                            margin: 20px auto;
+
+                            >a {
+                                color: black;
+
+                                >i {
+                                    position: relative;
+
+                                    &:hover {
+                                        >p {
+                                            opacity: 1;
+                                        }
+                                    }
+
+                                    >p {
+                                        background-color: gray;
+                                        color: white;
+                                        position: absolute;
+                                        left: -50%;
+                                        font-size: 13px;
+                                        opacity: 0;
+                                        transition: .4s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        /* end sec3// */
+        >.sec4 {
+            width: 100%;
+            height: 100vh;
+            border-top: .5px solid rgba(128, 128, 128, 0.272);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            >* {
+                width: 80%;
+            }
+
+            >div {
+                height: 30%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                >h2 {
+                    margin-top: 100px;
+                    font-size: 50px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                >p {
+                    width: 70%;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+
+            >section {
+                height: 70%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                >figure {
+                    width: 30%;
+                    height: 70%;
+                    position: relative;
+                    transition: .4s;
+
+                    &:hover {
+                        scale: 1.03;
+                    }
+
+                    >a {
+                        width: 100%;
+                        height: 100%;
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                    }
+
+                    >.btn {
+                        width: 100px;
+                        height: 30px;
+                        border: 1px solid white;
+                        position: absolute;
+                        top: 10%;
+                        left: 6%;
+
+                        >a {
+                            color: white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    >h2 {
+
+                        position: absolute;
+                        bottom: 10%;
+                        width: 90%;
+                        left: 6%;
+
+                        >a {
+                            font-size: 20px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end sec4// */
+        >.sec5 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/banner-1-scaled.webp);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >div {
+                width: 80%;
+                height: 60%;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                >* {
+                    height: 60%;
+                }
+
+                >div {
+                    width: 35%;
+
+                    >h2 {
+                        font-size: 40px;
+                    }
+
+                    >p {
+                        margin: 20px 0;
+                        font-size: 20px;
+                    }
+                }
+
+                >section {
+                    width: 45%;
+                    padding-left: 40px;
+
+                    >input {
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid rgba(128, 128, 128, 0.557);
+                        outline: 0;
+                        height: 50px;
+                        padding-left: 20px;
+                        font-size: 18px;
+
+                        &:nth-of-type(2) {
+                            margin-top: 20px;
+                        }
+                    }
+
+                    >.btn {
+                        margin-top: 50px;
+                        width: 250px;
+                        border: 2px solid black;
+
+                        >a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            font-style: 20px;
+                            transition: .4s;
+                            color: black;
+
+                            &:hover {
+                                color: white;
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end sec5// */
+        >.sec6 {
+            width: 100%;
+            height: 105vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            >div {
+                width: 100%;
+                height: 25%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                >h2 {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 60px;
+                    margin-top: 50px;
+                    width: 100%;
+                }
+
+                >p {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    width: 60%;
+                    font-size: 18px;
+                }
+            }
+
+            >section {
+                width: 80%;
+                height: 30%;
+                display: flex;
+                justify-content: space-between;
+
+                >figure {
+                    height: 100%;
+                    width: 22%;
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+
+        /* end sec6// */
+        >.sec7 {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/banner-2-scaled.webp);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            background-attachment: fixed;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.738);
+            }
+
+            display: flex;
+
+            >* {
+                margin-top: 100px;
+                z-index: 999;
+            }
+
+            >div {
+
+                width: 30%;
+
+                >* {
+                    color: white;
+                    margin-left: 100px;
+                }
+
+                >h3 {
+                    margin-top: 20px;
+                    font-size: 40px;
+                }
+
+                >p {
+                    margin-top: 20px;
+                    font-size: 17px;
+                    width: 65%;
+                    text-align: left;
+                }
+
+                >.btn {
+
+                    margin-top: 40px;
+                    width: 200px;
+                    border: 2px solid white;
+
+                    >a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        transition: .4s;
+
+                        &:hover {
+                            color: black;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+
+            >section {
+                width: 60%;
+
+                >div {
+                    width: 100%;
+                    height: 25%;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.659);
+                    display: flex;
+                    position: relative;
+
+                    &:nth-last-of-type {
+                        border-bottom: none;
+                    }
+
+                    >section {
+                        height: 100%;
+                        width: 30%;
+                        padding-top: 35px;
+
+                        &:nth-of-type(1) {
+                            >a {
+                                color: white;
+                            }
+                        }
+
+                        &:nth-of-type(2) {
+                            >* {
+                                color: white;
+                            }
+
+                            >h3 {
+                                font-size: 30px;
+                            }
+
+                            >p {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+
+                    >.btn {
+                        margin-top: 30px;
+                        width: 150px;
+                        position: absolute;
+                        right: 0;
+
+                        >a {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            border: 2px solid white;
+                            transition: .4s;
+
+                            &:hover {
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end sec7// */
+        >.sec8 {
+            width: 100%;
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >div {
+                width: 80%;
+                height: 70%;
+                display: flex;
+
+                >* {
+                    height: 100%;
+                }
+
+                >figure {
+                    width: 45%;
+
+                    >img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        background-position: center;
+
+                    }
+                }
+
+                >section {
+                    width: 55%;
+
+                    >* {
+                        width: 70%;
+                        margin-left: 100px;
+                    }
+
+                    >h2 {
+                        margin-top: 110px;
+                        font-size: 40px;
+                    }
+
+                    >p {
+                        margin-top: 30px;
+                        font-size: 18px;
+                    }
+
+                    >.btn {
+                        width: 200px;
+                        margin-top: 30px;
+
+                        >a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            border: 2px solid black;
+                            color: black;
+                            transition: .4s;
+
+                            &:hover {
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* end sec8// */
+        >.sec9 {
+            width: 100%;
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -120px;
+
+            >div {
+                width: 80%;
+                height: 70%;
+                display: flex;
+
+                >* {
+                    height: 100%;
+                }
+
+                >section {
+                    width: 55%;
+
+                    >* {
+                        width: 70%;
+                        margin-left: 100px;
+                    }
+
+                    >h2 {
+                        margin-top: 110px;
+                        font-size: 40px;
+                    }
+
+                    >p {
+                        margin-top: 30px;
+                        font-size: 18px;
+                    }
+
+                    >.btn {
+                        width: 200px;
+                        margin-top: 30px;
+
+                        >a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 100%;
+                            border: 2px solid black;
+                            color: black;
+                            transition: .4s;
+
+                            &:hover {
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                >figure {
+                    width: 45%;
+
+                    >img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        background-position: center;
+
+                    }
+                }
+            }
+        }
+
+        /* end sec9// */
+        >.sec10 {
+            width: 100%;
+            height: 500px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >div {
+                width: 80%;
+                height: 60%;
+                display: flex;
+
+                >* {
+                    height: 100%;
+                    width: 50%;
+                }
+
+                >div {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    >h2 {
+                        width: 100%;
+                        height: 25%;
+
+                        >a {
+                            color: white;
+                        }
+                    }
+
+                    >section {
+                        width: 50%;
+                        height: 75%;
+
+                        >ul {
+                            width: 100%;
+                            height: 70%;
+
+                            >li {
+                                width: 100%;
+                                height: 20%;
+                                margin-bottom: 20px;
+
+                                >a {
+                                    display: flex;
+                                    width: 80%;
+                                    height: 100%;
+                                    color: white;
+                                    transition: .4s;
+
+                                    &:hover {
+                                        color: rgb(86, 86, 246);
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(1) {
+                            >div {
+                                margin-top: 20px;
+                                width: 40%;
+                                height: 20%;
+                                display: flex;
+                                align-items: end;
+                                justify-content: space-between;
+
+                                >a {
+                                    width: 100%;
+                                    height: 100%;
+                                    position: relative;
+
+                                    >i {
+                                        color: white;
+                                        font-size: 18px;
+                                    }
+
+                                    >p {
+                                        position: absolute;
+                                        background-color: rgba(128, 128, 128, 0.729);
+                                        color: white;
+                                        opacity: 0;
+                                        left: -18px;
+                                        bottom: -15%;
+                                        transition: .4s;
+
+                                    }
+
+                                    &:hover {
+                                        >p {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                >section {
+                    >* {
+                        color: white;
+                    }
+
+                    >h4 {
+                        font-size: 25px;
+                    }
+
+                    >input {
+                        margin-top: 40px;
+                        width: 100%;
+                        height: 70px;
+                        background-color: transparent;
+                        border: 2px solid rgba(128, 128, 128, 0.535);
+                        padding-left: 20px;
+                        font-size: 20px;
+                        position: relative;
+                    }
+
+                    >.btn {
+                        width: 150px;
+                        height: 55px;
+                        position: absolute;
+                        margin-top: -62px;
+                        position: absolute;
+                        right: 10.5%;
+
+                        >a {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgba(128, 128, 128, 0.592);
+                            color: white;
+                            transition: .4s;
+                            &:hover {
+                                background-color: rgba(128, 128, 128, 0.851);
+                            }
+
+                        }
+                    }
+
+                    >p {
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+
+        /* end sec10// */
+         >footer{
+            width: 100%;
+            height: 100px;
+            background-color:black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            >*{
+                color: white;
+                font-size: 30px;
+                
+            }
+            >h2{
+                font-weight: normal;
+            }
+        }
+        /* end footer// */
+    }
+}
+
+@keyframes img1 {
+
+    0%,
+    30%,
+    100% {
+        opacity: 1;
+    }
+
+    36% {
+        opacity: 0;
+    }
+
+    36.00001%,
+    94% {
+        opacity: 0;
+    }
+}
+
+@keyframes img2 {
+
+    0%,
+    30%,
+    69.0001%,
+    100% {
+        opacity: 0;
+    }
+
+    36%,
+    63% {
+        opacity: 1;
+    }
+
+    69% {
+        opacity: 0;
+    }
+}
+
+@keyframes img3 {
+
+    0%,
+    63% {
+        opacity: 0;
+    }
+
+    69%,
+    94% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
